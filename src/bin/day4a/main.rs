@@ -1,5 +1,5 @@
 fn main() {
-  let map: Vec<_> = include_str!("input").lines().collect();
+  let map: Vec<_> = include_str!("test").lines().collect();
   let mut word = [0; 4];
   let directions = [
     [(0, 0), (0, 1), (0, 2), (0, 3)],
