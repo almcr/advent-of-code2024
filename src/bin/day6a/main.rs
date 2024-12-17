@@ -7,9 +7,7 @@ fn main() {
     .iter()
     .enumerate()
     .filter_map(|(i, l)| l.find("^").map(|o| (i, o)))
-    .map(|(i, o)| Some((i, o)))
-    .next()
-    .unwrap();
+    .next();
   let mut n = 1;
   while let Some((x, y)) = pos {
     visited[x][y] = true;
